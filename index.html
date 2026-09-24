@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src https://api.github.com; img-src 'self' data:; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>目标周报</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header><div class="wrap brand"><div><h1>目标周报</h1><p>一个目标，一个页面；每天推进，每周复盘。</p></div>
+    <nav aria-label="主导航"><a href="#home">所有目标</a><a href="#report">总周报</a><a href="#settings">连接设置</a></nav>
+  </div></header>
+  <div class="wrap statusbar"><span id="connection">尚未连接</span><button id="refresh" class="secondary" hidden>读取最新记录</button></div>
+  <div class="wrap"><div id="notice" role="status" aria-live="polite" hidden></div></div>
+  <main id="app" class="wrap"><p>正在加载记录器……</p></main>
+  <noscript>请启用浏览器 JavaScript，以连接你的私有仓库。</noscript>
+  <footer class="wrap">记录保存在你的 GitHub 私有仓库。切换设备后，请读取最新记录。</footer>
+</body>
+</html>
